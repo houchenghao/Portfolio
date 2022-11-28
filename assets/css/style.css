@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: rgb(127, 171, 169);
 }
 
 body{
@@ -49,29 +50,37 @@ body{
 .header nav a{
     font-size: 20px ;
     font-weight: bolder;
-    color:rgb(197, 199, 228);
+    color:rgb(35, 46, 208);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     border-bottom: 5px solid;
 }
 
+.header nav a:hover{
+    background-color: antiquewhite;
+}
+
 .background-image{
     height: 200px;
     width: 100%;
-    margin-bottom: 20px;
     background-image: url("../images/background.jpg" );
     background-size: cover;
     background-position: center;   
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: flex-end;
 }
 
 h2{
-    margin: 20px;
+    margin: 0px;
     background: linear-gradient(90deg, rgb(108, 205, 235) 0%, rgb(12, 44, 87) 100%);
     color: bisque;
     font-size: 50px;
+}
+
+main{
+    padding-top: 20px;
 }
 
 .about-me, .work, .contact-me{
@@ -83,8 +92,8 @@ h2{
 .about-me aside, .work aside, .contact-me aside{
     display: flex;
     padding: 10px;
-    width: 10%;
-    font-size: 35px;
+    width: 15%;
+    font-size: 30px;
     flex-direction: column;
     align-items: flex-end;
     border-right: 5px solid
@@ -110,10 +119,19 @@ h2{
     background-image: url("../images/image-1.jpg" );
     background-size: cover;
     border-radius: 20px;
+    border:5px solid;
+    border-color: rgb(4, 42, 29);
     background-position: center;   
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    
+}
+
+.job1:hover{
+    color:#111;
+    background-image: url("../images/image-1-dark.jpg" );
+    box-shadow:  0 0 80px rgb(18, 51, 218);
 }
 
 h4{
@@ -130,11 +148,20 @@ h4{
     background-image: url("../images/image-2.jpg" );
     background-size: cover;
     border-radius: 20px;
+    border:5px solid;
+    border-color: rgb(4, 42, 29);
     background-position: center;   
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
+
+.job2:hover{
+    color:#111;
+    background-image: url("../images/image-2-dark.jpg" );
+    box-shadow:  0 0 80px rgb(162, 120, 236);
+}
+
 
 .job3{
     height: 200px;
@@ -142,10 +169,18 @@ h4{
     background-image: url("../images/image-3.jpg" );
     background-size: cover;
     border-radius: 20px;
+    border:5px solid;
+    border-color: rgb(4, 42, 29);
     background-position: center;   
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+}
+
+.job3:hover{
+    color:#111;
+    background-image: url("../images/image-3-dark.jpg" );
+    box-shadow:  0 0 80px rgb(35, 127, 155);
 }
 
 .job4{
@@ -154,10 +189,18 @@ h4{
     background-image: url("../images/image-4.jpg" );
     background-size: cover;
     border-radius: 20px;
+    border:5px solid;
+    border-color: rgb(4, 42, 29);
     background-position: center;   
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+}
+
+.job4:hover{
+    color:#111;
+    background-image: url("../images/image-4-dark.jpg" );
+    box-shadow:  0 0 80px rgb(123, 9, 224);
 }
 
 .job5{
@@ -165,6 +208,8 @@ h4{
     width: 49%;
     background-image: url("../images/image-5.jpg" );
     background-size: cover;
+    border:5px solid;
+    border-color: rgb(4, 42, 29);
     border-radius: 20px;
     background-position: center;   
     display: flex;
@@ -172,9 +217,17 @@ h4{
     align-items: flex-end;
 }
 
+.job5:hover{
+    color:#111;
+    background-image: url("../images/image-5-dark.jpg" );
+    box-shadow:  0 0 80px rgb(204, 18, 46);
+}
+
 .contact-detail{
     display: flex;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(80, 52, 237);
     width: 80%;
     list-style-type: none;
     justify-content: space-around;
@@ -184,3 +237,4 @@ h4{
 .contact-detail li  {
     border-bottom: 3px solid;
 }
+
